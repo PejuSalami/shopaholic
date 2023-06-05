@@ -1,9 +1,9 @@
 import React from "react";
 import "./css/App.css";
-// import Home from "./pages/Home";
+import Home from "./pages/Home";
 // import Header from "./pages/Header";
 // import Checkout from "./Checkout";
-import CheckoutPg from "./pages/CheckoutPg";
+import Checkout from "./pages/Checkout";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -13,7 +13,8 @@ function App() {
       <Home /> */}
       <Router>
         <Switch>
-          <Route exact path="/checkout" component={CheckoutPg} />
+          <Route exact path="/checkout" component={Checkout} />
+          <Route exact path="/" component={Home} />
         </Switch>
       </Router>
     </div>

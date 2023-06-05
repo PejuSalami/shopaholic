@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "./Header";
 import "../css/Home.css";
 import Banner from "../images/Banner.jpg";
 import Product from "../pages/Product";
@@ -11,6 +12,7 @@ import Book from "../images/Book.png";
 function Home() {
   return (
     <div>
+      <Header />
       <div className="home">
         <div className="home_container">
           <img src={Banner} alt="" className="home_image" />
